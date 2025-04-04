@@ -5,7 +5,7 @@ This plugin allows you to attach an audio file to a note in [Obsidian](https://o
 > [!NOTE]
 > 🚧 Under active development 🚧
 
-![[preview.png]]
+![Preview](preview.png)
 
 ## Usage
 
@@ -16,8 +16,6 @@ Add a `sticky-audio` [property](https://help.obsidian.md/properties) to the fron
 sticky-audio: audio.mp3
 ---
 ```
-
-It will look lik
 
 ## Why not just use `![[audio.mp3]]`?
 
