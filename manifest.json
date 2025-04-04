@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-sticky-audio",
+	"name": "Sticky Audio",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Allows you to attach a audio files to your notes and play them back in a sticky player.",
+	"author": "Tom Verelst",
+	"authorUrl": "https://github.com/tomverels",
+	"isDesktopOnly": false
+}
