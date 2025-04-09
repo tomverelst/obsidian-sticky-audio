@@ -31,7 +31,8 @@ and keeping it in the DOM!
 
 ## Roadmap
 
-- [x] Add sticky audio element to a note via a property
+- [x] Add sticky audio element to the active note via a property
+- [ ] Support multiple views
 - [ ] Automatic playback when the note is opened
 - [ ] Customizable styling and position
 - [ ] Drag-and-drop audio files to make them sticky

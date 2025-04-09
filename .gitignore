@@ -25,3 +25,5 @@ ignore-*
 
 .env
 release.sh
+
+package-lock.json

@@ -1,0 +1,26 @@
+version: '3'
+
+dotenv: [".env", "{{.ENV}}/.env.", "{{.HOME}}/.env"]
+
+vars:
+
+tasks:
+  sandbox:
+    deps: ["vault:sandbox:ensure"]
+    cmds:
+      - npm run dev
+
+  vault:sandbox:ensure:
+    desc: Ensures the sandbox Vault has been set
+    cmds:
+      - |
+        # Check if OBSIDIAN_SANDBOX_VAULT is set
+        if [ -z "$OBSIDIAN_SANDBOX_VAULT" ]; then
+          echo "OBSIDIAN_SANDBOX_VAULT is not set (in the .env file).
+          echo "Please set it to the path of a vault!"
+          exit 1
+        fi
+
+    silent: true
+    status:
+      - test -n "$OBSIDIAN_SANDBOX_VAULT"
